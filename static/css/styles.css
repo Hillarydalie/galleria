@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Serif|Neuton&display=swap');
+/*
+font-family: 'IBM Plex Serif', serif;
+font-family: 'Neuton', serif;
+*/
+*{
+    font-family: 'IBM Plex Serif', serif;
+}
+
+.col-md-4 {
+    padding: 0px;
+    border: 1px solid #6c757d;
+    border-style: double;
+}
+
+.col-sm-4.col-md-4.nav.navbar-right {
+    padding-left: 8%;
+    border: none;
+    border-style: none;
+}
+
+a.navbar-brand {
+    color: lightgrey;
+}
+
+blockquote.blockquote.text-center {
+    margin: 5%;
+    font-family: 'IBM Plex Serif', serif;
+}
