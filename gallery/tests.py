@@ -18,3 +18,25 @@ class UserTestClass(TestCase):
         self.user.delete_user()
         users = User.objects.all()
         self.assertTrue(len(users) == 0)
+
+#  Test case for image class
+class ImageTestClass(TestCase):
+    def setUp(self):
+        self.location = Location(place='Nairobi')
+        self.location.save()
+        self.category = Category(tag='Food')
+        self.category.save()
+        self.user = User(first_name="John")
+        self.user.save()
+        self.image = Image(image='imageurl', title='camera', description='capturing device', location = self.location, category = self.category, user = self.user)
+
+    def test_image_instance(self):
+        self.assertTrue(isinstance(self.image, Image))
+
+
+    def test_delete_image_method(self):
+        self.image.save_image()
+        images = Image.objects.all()
+        self.image.delete_image()
+        images = Image.objects.all()
+        self.assertTrue(len(images) == 0)
