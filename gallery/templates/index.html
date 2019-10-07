@@ -6,8 +6,8 @@
     <div class="container">
             <blockquote class="blockquote text-center">
                 <h2 class="mb-0">Welcome to Galleria</h2>
-                <p class="mb-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-                <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+                <p class="mb-0">A photo speak a 1000 words, that explains my wealth.</p>
+                <footer class="blockquote-footer">Hillary Dalie, <cite title="Source Title">Chronicles of a Geek</cite></footer>
             </blockquote>
     </div>
 
@@ -16,9 +16,6 @@
             {% for photo_item in photos %}
                 <div class="col-md-4">
                     <img src="{{photo_item.image.url}}" class="card-img-top featureimage" width="250" height="250">
-                    <div class="card-header">
-                        {{photo_item.title}}
-                    </div>
                     <div class="card-footer">
 `                       <button type="button" class="btn-sm btn-dark" data-toggle="modal" data-target="#photo{{photo_item.id}}">
                           View Details
