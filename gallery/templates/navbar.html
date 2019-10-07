@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <nav class="navbar navbar-inverse bg-dark">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                  <a class="navbar-brand" href="{% url 'postimage' %}">The Galleria</a>
+                </div>
+                <!-- Adding a search form  -->
+                <div class="col-sm-4 col-md-4 navbar-right">
+                    <form class="form-inline" role="search" action="{% url 'search_results' %}">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                    </form>
+                </div>
+                <!-- search form end -->
+            </div>
+
+        </nav>
+    </body>
+</html>

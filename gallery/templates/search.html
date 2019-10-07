@@ -1,0 +1,24 @@
+{%extends 'base.html'%}
+
+ {% block content %}
+    <div class="container">
+
+        <div class="row">
+            {% if photo_item%}
+            <h2>Found {{ photo_items|length }} of searched term {{message}}</h2>
+            {% else %}
+            <h2> Sorry. 0 images for the search term {{message}}</h2>
+            {% endif %}
+
+        </div>
+
+        <div class="row">
+
+            {% if images %} {% for image in images %}
+            <div class="col-sm-6 col-md-3">
+                <h1>{{photo_item.title}}</h1>
+            </div>
+            {% endfor %} {% endif %}
+        </div>
+    </div>
+  {% endblock %}
